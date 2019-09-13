@@ -47,8 +47,6 @@
                 'container'       => null,
                 'menu_class'      => 'nav',
                 'menu_id'         => 'nav',
-                'echo'            => true,
-                'fallback_cb'     => 'wp_page_menu'
               ]); ?>
 
             </nav> <!-- end #nav-wrap -->
