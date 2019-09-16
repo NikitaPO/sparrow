@@ -15,10 +15,11 @@ function get_theme_scripts() {
   wp_enqueue_script( 'init', get_template_directory_uri() . '/assets/js/init.js');
   wp_enqueue_script( 'flexslider', get_template_directory_uri() . '/assets/js/jquery.flexslider.js');
   wp_enqueue_script( 'doubletaptogo', get_template_directory_uri() . '/assets/js/doubletaptogo.js');
-}
+} 
 
 add_action( 'after_setup_theme', 'register_theme_menus' );
 function register_theme_menus() {
-  register_nav_menu( 'top_menu', 'Меню в шапке сайта' );
-  register_nav_menu( 'bottom_menu', 'Меню в футере сайта' );
+  register_nav_menu( 'header_menu', 'Меню в шапке сайта' );
+  register_nav_menu( 'footer_menu', 'Меню в футере сайта' );
+  register_nav_menu( 'footer_socials', 'Социальные иконки в футере' );
 }

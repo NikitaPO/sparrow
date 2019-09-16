@@ -43,7 +43,7 @@
 	            <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
               <?php wp_nav_menu([
-                'theme_location'  => 'top_menu',
+                'theme_location'  => 'header_menu',
                 'container'       => null,
                 'menu_class'      => 'nav',
                 'menu_id'         => 'nav',
