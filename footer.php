@@ -14,11 +14,14 @@
           'after'           => '.',
         ]); ?>
 
-        <?php wp_nav_menu([
-          'theme_location' => 'footer_socials',
-          'container'      => null,
-          'menu_class'     => 'footer-social'
-        ]) ?>
+        <ul class="footer-social">
+           <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+           <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+           <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+           <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+           <li><a href="#"><i class="fa fa-skype"></i></a></li>
+           <li><a href="#"><i class="fa fa-rss"></i></a></li>
+        </ul>
 
          <ul class="copyright">
             <li>Copyright &copy; 2014 Sparrow</li>
