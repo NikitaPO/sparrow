@@ -7,6 +7,11 @@
     }
   ?>
 
+  <!-- Page Title
+  ================================================== -->
+
+  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
    <!-- Content
    ================================================== -->
    <div class="content-outer">
@@ -25,7 +30,7 @@
             <?php get_sidebar('right') ?>
 
          </div> <!-- Secondary End-->
-
+         
       </div>
 
    </div> <!-- Content End-->
@@ -56,6 +61,9 @@
       </div>
 
    </section> <!-- Tweets Section End-->
+
+ <?php endwhile; ?>
+ <?php endif; ?>
 
    <!-- footer
    ================================================== -->

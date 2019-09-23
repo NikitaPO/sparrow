@@ -19,7 +19,6 @@
 
    <div class="post-content">
       <?php
-        the_post();
         echo the_content();
       ?>
    </div>
