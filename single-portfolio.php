@@ -1,9 +1,4 @@
-<?php
-/*
-Template Name: Portfolio post
-Template Post Type: portfolio
-*/
- ?>
+
 <?php get_header(); ?>
 <?php
   $prev_post = get_previous_post();
@@ -22,18 +17,18 @@ Template Post Type: portfolio
 
               <div id="secondary"  class="four columns entry-details">
 
-                    <h1>Geometrics.</h1>
+                    <h1><?php the_title() ?></h1>
 
                     <div class="entry-description">
 
-                       <?php the_excerpt(); ?>
+                       <?php the_field('portfolio-post-description') ?>
 
                     </div>
 
                     <ul class="portfolio-meta-list">
-  						   <li><span>Date: </span><?php the_time('M j, Y'); ?></li>
-  						   <li><span>Client </span>Styleshout</li>
-  						   <li><span>Skills: </span>Photoshop, Photography, Branding</li>
+  						   <li><span>Date: </span><?php the_field('portfolio-post-date') ?></li>
+  						   <li><span>Client </span><?php the_field('portfolio-post-client') ?></li>
+  						   <li><span>Skills: </span><?php the_field('portfolio-post-skills') ?></li>
   				      </ul>
 
                     <a class="button" href="http://behance.net">View project</a>
@@ -45,6 +40,8 @@ Template Post Type: portfolio
                  <div class="entry-media">
 
                    <?php the_post_thumbnail() ?>
+
+                   <img src="<?php the_field('portfolio-post-photo') ?>" alt="">
 
                  </div>
 
