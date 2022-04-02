@@ -1,1 +1,1 @@
-Word Press theme for sparrow.ru site
+WordPress theme for sparrow.ru site
