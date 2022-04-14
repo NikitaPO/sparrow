@@ -1,1 +1,1 @@
-WordPress theme for sparrow.ru site
+WordPress theme Sparrow
